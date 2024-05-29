@@ -254,7 +254,7 @@ hr {
 		align-items: center;
 	}
 	.payment-form {
-		flex-direction: column;
+    flex-direction: column-reverse;
 		align-items: center;
 	}
 	.heading {
