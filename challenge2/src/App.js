@@ -8,7 +8,6 @@ import PaymentForm from "./PaymentForm";
 function App() {
 	const [selectedCard, setSelectedCard] = useState(cardData[0]);
 
-
 	return (
 		<main className='container'>
 			<header className='heading'>

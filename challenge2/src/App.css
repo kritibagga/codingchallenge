@@ -177,6 +177,7 @@ hr {
 .payment-checkbox:checked ~ .checkmark {
 	background-color: black;
 }
+
 .checkmark:after {
 	content: "";
 	position: absolute;
@@ -215,7 +216,6 @@ hr {
 }
 
 /* order summary */
-
 .order-summary {
 	width: 300px;
 }
@@ -242,6 +242,7 @@ hr {
 .summary-value {
 	font-weight: bold;
 }
+
 .total-cost {
 	margin-top: -0.6rem;
 	font-size: 1.2rem;

@@ -22,7 +22,6 @@ const states = {
 const CountryStateDropdown = ({ onCountryChange, onStateChange }) => {
 	const [selectedCountry, setSelectedCountry] = useState("");
 	const [selectedState, setSelectedState] = useState("");
-
 	const [disabled, setDisabled] = useState(true);
 
 	const handleCountryChange = (event) => {
@@ -73,9 +72,10 @@ const CountryStateDropdown = ({ onCountryChange, onStateChange }) => {
 					value={selectedCountry}
 					aria-label='Select your country'>
 					{countryOptions}
-
 				</select>
-                <span className="select-arrow"><i className="fa-solid fa-angle-down"/></span>
+				<span className='select-arrow'>
+					<i className='fa-solid fa-angle-down' />
+				</span>
 			</div>
 			<div className='payment-group'>
 				<label
@@ -93,12 +93,16 @@ const CountryStateDropdown = ({ onCountryChange, onStateChange }) => {
 					onChange={handleStateChange}
 					value={selectedState}
 					aria-label='Select your state or province'>
-                           <option value="" disabled>
-            Select a state or province
-          </option>
+					<option
+						value=''
+						disabled>
+						Select a state or province
+					</option>
 					{stateOptions}
 				</select>
-                <span className="select-arrow"><i className="fa-solid fa-angle-down"/></span>
+				<span className='select-arrow'>
+					<i className='fa-solid fa-angle-down' />
+				</span>
 			</div>
 		</>
 	);
